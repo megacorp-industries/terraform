@@ -42,8 +42,8 @@ resource "libvirt_cloudinit_disk" "cloud_init" {
 
 resource "libvirt_domain" "fortigate_domain" {
   name   = "${var.identity}-${random_string.generator.id}"
-  memory = "4096"
-  vcpu   = 2
+  memory = "2048"
+  vcpu   = 1
 
   # cloudinit = libvirt_cloudinit_disk.cloud_init.id
 
