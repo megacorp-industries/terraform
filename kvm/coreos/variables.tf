@@ -1,7 +1,7 @@
 variable "ignitionfile" {
   description = "Path to ignition file"
   type        = string
-  default     = "/tmp/config.ign"
+  default     = "/var/lib/libvirt/images/config.ign"
 }
 
 variable "qcow2image" {
